@@ -1,10 +1,13 @@
 :root{
-    --size-back-ground: 100px;
+    --size-back-ground: 150px;
+    line-height: 1.5;
+    
 }
 
 .titleText{
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 600;
+    padding: 15px;
 }
 
 .backgroundHeader {
@@ -13,8 +16,32 @@
     background-repeat: no-repeat;
     align-items: center;
     background-size:cover;
-    height: 100px;
+    height: 150px;
     background-position: center;
+}
+
+.mainBody{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 15px;
+    min-height: 300px;
+    padding: 10px;
+}
+
+.newLi{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+}
+
+.date{
+    margin-left: auto;
+    color: grey;
+}
+
+.category{
+    color: grey;
 }
 
 .allNews{

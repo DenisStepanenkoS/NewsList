@@ -49,12 +49,32 @@ news.forEach(item => {
     const backgroundHeader = document.createElement('header'); 
     backgroundHeader.classList.add('backgroundHeader');
     backgroundHeader.style.backgroundImage = `linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('${item.headerBgSrc}')`;
-    newLi.appendChild(backgroundHeader);
+    newLi.append(backgroundHeader);
 
     const titleText = document.createElement('p');
     titleText.classList.add('titleText');
     titleText.textContent = item.title;
-    backgroundHeader.appendChild(titleText);
+    backgroundHeader.append(titleText);
+
+    const mainBody = document.createElement('div');
+    mainBody.classList.add('mainBody');
+    newLi.append(mainBody);
+
+    const category = document.createElement('p');
+    category.classList.add('category')
+    category.textContent = item.category;
+    mainBody.append(category);
+
+    const body = document.createElement('p');
+    body.classList.add('text');
+    body.textContent = item.body;
+    mainBody.append(body);
+
+    const date = document.createElement('p');
+    date.classList.add('date');
+    date.textContent = item.date;
+    mainBody.append(date);
+
 
 });
     
