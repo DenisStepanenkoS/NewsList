@@ -1,0 +1,26 @@
+:root{
+    --size-back-ground: 100px;
+}
+
+.titleText{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.backgroundHeader {
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    background-size:cover;
+    height: 100px;
+    background-position: center;
+}
+
+.allNews{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    gap: 15px;
+}
+
