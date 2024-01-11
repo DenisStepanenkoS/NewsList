@@ -75,6 +75,27 @@ news.forEach(item => {
     date.textContent = item.date;
     mainBody.append(date);
 
+    const like = document.createElement('i');
+    like.classList.add('fa-solid');
+    like.classList.add('fa-heart');
+    like.classList.add('like');
+    backgroundHeader.append(like);
+    like.onclick = function(){
+        if(like.style.color === 'yellow')
+            like.style.color = 'rgb(87, 86, 86)';
+        else
+            like.style.color = 'yellow';
+    }
+
+    const trash = document.createElement('i');
+    trash.classList.add('fa-solid');
+    trash.classList.add('fa-trash');
+    trash.classList.add('trash');
+    backgroundHeader.append(trash);
+    
+    trash.addEventListener("click", (e)=>{
+        e.target.closest('.newLi').remove();
+    });
 
 });
     
